@@ -6,7 +6,7 @@
       "attributes" : {
         "hideThemeFooter" : false,
         "showThemeFooterAtBottom" : true,
-        "stickyThemeHeader" : false
+        "stickyThemeHeader" : true
       },
       "children" : [ {
         "children" : [ {
@@ -35,7 +35,7 @@
                 "paddingVertical" : "none",
                 "text" : "← FinDock for Gibbons",
                 "textAlign" : "left",
-                "textDecoration" : "{\"underline\":true}",
+                "textDecoration" : "{}",
                 "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\",\"enableOverride\":false}",
                 "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"standard__webPage\",\"attributes\":{\"url\":\"https://findockforgibbons.org/\"}}}}"
               },
@@ -60,7 +60,7 @@
         "children" : [ {
           "attributes" : {
             "backgroundImageConfig" : "",
-            "backgroundImageOverlay" : "rgb(255, 0, 0)",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
             "componentSpacerSize" : ".5rem",
             "dxpStyle" : {
               "margin" : {
@@ -84,7 +84,7 @@
               "attributes" : {
                 "dxpStyle" : { },
                 "imageInfos" : "",
-                "richTextValue" : "<span style=\"color: #0E7C66;\"><img src=\"https://external.findock.com/experience-cloud/icons/shield.svg\" alt=\"\" aria-hidden=\"true\"> Secure &amp; Trusted</span>"
+                "richTextValue" : "<span style=\"color: var(--dxp-g-brand);\"><img src=\"https://external.findock.com/experience-cloud/icons/shield.svg\" alt=\"\" aria-hidden=\"true\"> Secure &amp; Trusted</span>"
               },
               "definition" : "community_builder:htmlEditor",
               "id" : "4f7776c6-10f6-455f-b0d1-8ecfe9b0602e",
@@ -116,7 +116,7 @@
               "attributes" : {
                 "dxpStyle" : { },
                 "imageInfos" : "",
-                "richTextValue" : "<span style=\"color: #0E7C66;\"><img src=\"https://external.findock.com/experience-cloud/icons/lock.svg\" alt=\"\" aria-hidden=\"true\"> Tax Deductible</span>"
+                "richTextValue" : "<span style=\"color: var(--dxp-g-brand);\"><img src=\"https://external.findock.com/experience-cloud/icons/lock.svg\" alt=\"\" aria-hidden=\"true\"> Tax Deductible</span>"
               },
               "definition" : "community_builder:htmlEditor",
               "id" : "5865ef9c-0ad2-418f-872e-ae89675ba336",
@@ -148,7 +148,7 @@
               "attributes" : {
                 "dxpStyle" : { },
                 "imageInfos" : "",
-                "richTextValue" : "<span style=\"color: #0E7C66;\"><img src=\"https://external.findock.com/experience-cloud/icons/envelope.svg\" alt=\"\" aria-hidden=\"true\"> Questions?</span>"
+                "richTextValue" : "<span style=\"color: var(--dxp-g-brand);\"><img src=\"https://external.findock.com/experience-cloud/icons/envelope.svg\" alt=\"\" aria-hidden=\"true\"> Questions?</span>"
               },
               "definition" : "community_builder:htmlEditor",
               "id" : "698202b6-440e-4dd9-8b84-6c841d7f14c3",
@@ -215,7 +215,7 @@
                 },
                 "fit" : "contain",
                 "height" : 350,
-                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"https://external.findock.com/experience-cloud/regulator-watermark-example-inverse.png\",\"altText\":\"Registered with Fundraising Regulator\",\"contentKey\":\"\",\"contentType\":null}}",
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"https://external.findock.com/experience-cloud/regulator-watermark-example-inverse.png\",\"altText\":\"Organisation registered with the Fundraising Regulator\",\"contentKey\":\"\",\"contentType\":null}}",
                 "overlayColor" : "",
                 "position" : "center center",
                 "width" : 33

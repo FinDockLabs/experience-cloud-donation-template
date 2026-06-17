@@ -22,7 +22,7 @@
             "children" : [ {
               "attributes" : {
                 "imageInfos" : "",
-                "richTextValue" : "<p style=\"text-align: center;\"><strong style=\"font-size: 72px; color: rgb(0, 138, 0);\">✓</strong></p>"
+                "richTextValue" : "<p style=\"text-align: center;\"><strong aria-hidden=\"true\" style=\"font-size: 72px; color: rgb(0, 138, 0);\">✓</strong></p>"
               },
               "definition" : "community_builder:richTextEditor",
               "id" : "ea5c8c13-d59d-4749-8180-1f360d12fa30",
@@ -52,7 +52,7 @@
                 "text" : "Thank you for your donation.",
                 "textAlign" : "center",
                 "textDecoration" : "{}",
-                "textDisplayInfo" : "{\"headingTag\":\"h3\",\"textStyle\":\"heading-medium\"}"
+                "textDisplayInfo" : "{\"headingTag\":\"h2\",\"textStyle\":\"heading-medium\"}"
               },
               "definition" : "dxp_base:textBlock",
               "id" : "1e95f9ed-831f-432e-8b27-7094f97fde1a",

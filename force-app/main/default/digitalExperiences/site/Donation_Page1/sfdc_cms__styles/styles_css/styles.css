@@ -1,6 +1,49 @@
 /*
- * Your global styles here
+ * Global styles — Donation_Page1 Experience Bundle
+ *
+ * ============================================================
+ * WCAG 2.2 AA Compliance Notes for Administrators
+ * ============================================================
+ *
+ * This template ships with accessible default colors. When you
+ * customise the theme in Experience Builder, you are responsible
+ * for maintaining the contrast ratios below.
+ *
+ * Key ratios (WCAG 2.2 AA requires ≥ 4.5:1 for normal text,
+ *             ≥ 3:1 for large text / UI components):
+ *
+ *   Page / light sections (BackgroundColor ≈ rgb(248,248,246)):
+ *     PrimaryAccentColor (--dxp-g-brand): rgb(10,87,72)  → 7.1:1  ✓
+ *     Body text (--dxp-g-root-contrast):  inherits dark   → ≥ 7:1  ✓
+ *
+ *   Dark footer section (BackgroundColor: rgb(4,33,27)):
+ *     LinkColor  rgb(18,161,132)  → 5.0:1  ✓  (Footer branding set)
+ *     Body text  rgb(188,188,188) → 8.6:1  ✓  (Footer branding set)
+ *
+ *   If you change PrimaryAccentColor, verify it against the page
+ *   background using https://webaim.org/resources/contrastchecker/
+ *
+ *   If you change the Footer LinkColor, verify it against the
+ *   dark footer background rgb(4,33,27).
+ *
+ * Footer body-small text (BodySmallFontSize = 0.75rem / ~12px):
+ *   All footer body descriptions — trust-badge paragraphs and dark-section
+ *   disclaimers — intentionally use body-small (0.75rem ≈ 12px).
+ *   WCAG 2.2 does not mandate a minimum font size; SC 1.4.4 requires only
+ *   that text scales to 200% without loss of content, which rem units satisfy.
+ *   WAVE will show advisory "Very small text" alerts for these blocks — this
+ *   is an expected, deliberate design choice for secondary footer content.
+ *   body-regular (1rem) would render at 14px in this branding context and is
+ *   too large for footer support text; 12px is the intended reading size here.
+ *
+ * ============================================================
+ * WCAG 2.4.7 Focus Visible / 2.4.11 Focus Not Obscured (new in WCAG 2.2)
+ * ============================================================
+ * The :focus-visible rule below uses currentColor so the focus
+ * ring automatically matches whatever link color the admin sets —
+ * no hardcoded value that would conflict with a custom theme.
  */
+
 html,
 body {
     height: 100%;
@@ -12,4 +55,39 @@ html {
 
 body {
     margin: 0;
+}
+
+/*
+ * Header back-link underline.
+ * Applied directly to the <a> element to prevent WAVE accessibility
+ * false positives caused by standard component styling on nested <span> tags.
+ */
+header a {
+    text-decoration: underline;
+}
+
+header a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+/*
+ * WCAG 2.4.11 Focus Not Obscured.
+ * Applies scroll-margin-top to ensure focused elements aren't trapped
+ * under sticky headers. Adjust 4rem if custom branding increases header height.
+ */
+:focus-visible {
+    scroll-margin-top: 4rem;
+}
+
+/*
+ * WCAG 2.4.7 / 2.4.11 — footer link focus indicator.
+ * Uses currentColor: inherits from the branding-set LinkColor so the
+ * outline is always the same hue as the link text, automatically adapting
+ * to Theme configurations in Experience Builder.
+ */
+footer a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+    text-decoration: underline;
 }

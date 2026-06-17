@@ -171,7 +171,7 @@
       "MaxContentWidthDesktop" : "1195px",
       "MaxContentWidthMobile" : "none",
       "MobileBaseFontSize" : "1rem",
-      "PrimaryAccentColor" : "rgb(14, 124, 102)",
+      "PrimaryAccentColor" : "rgb(10, 87, 72)",
       "PrimaryAccentForegroundColor" : "#ffffff",
       "SecondaryButtonBorderColor" : "var(--dxp-s-button-color)",
       "SecondaryButtonColor" : "rgba(255, 255, 255, 0)",

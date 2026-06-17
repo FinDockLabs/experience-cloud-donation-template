@@ -22,7 +22,7 @@
             "children" : [ {
               "attributes" : {
                 "imageInfos" : "",
-                "richTextValue" : "<p style=\"text-align: center;\"><strong style=\"font-size: 72px; color: rgb(161, 0, 0);\">✕</strong></p>"
+                "richTextValue" : "<p style=\"text-align: center;\"><strong aria-hidden=\"true\" style=\"font-size: 72px; color: rgb(161, 0, 0);\">✕</strong></p>"
               },
               "definition" : "community_builder:richTextEditor",
               "id" : "fa4340ec-1966-4df6-b369-448a76d4fe3a",
@@ -52,7 +52,7 @@
                 "text" : "Unfortunately something went wrong with your payment. Please go back and try again.",
                 "textAlign" : "center",
                 "textDecoration" : "{}",
-                "textDisplayInfo" : "{\"textStyle\":\"heading-medium\",\"headingTag\":\"h3\",\"enableOverride\":false}"
+                "textDisplayInfo" : "{\"textStyle\":\"heading-medium\",\"headingTag\":\"h2\",\"enableOverride\":false}"
               },
               "definition" : "dxp_base:textBlock",
               "id" : "79346fed-939f-443a-b9ca-5b3097a755df",
